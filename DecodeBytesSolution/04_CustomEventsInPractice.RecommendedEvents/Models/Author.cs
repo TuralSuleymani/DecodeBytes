@@ -1,11 +1,11 @@
-﻿using _03_CustomEventsInPractice.Events.Contracts;
+﻿using _04_CustomEventsInPractice.RecommendedEvents.Contracts;
 using CustomEventsInPractice.Common;
 
-namespace _03_CustomEventsInPractice.Models
+namespace _04_CustomEventsInPractice.RecommendedEvents.Models
 {
     internal record Author : DomainEntity, IPublisher
     {
-        public event SubscriberDelegate? OnUpdate;
+        public event EventHandler<PublishEventArgs>? OnUpdate;
         public Author(string name, string description)
         {
             Name = name;
@@ -17,8 +17,8 @@ namespace _03_CustomEventsInPractice.Models
         public void Publish(Article article)
         {
             Article createdArticle = article.Create();
-            string subscriberUpdateMessage = article.ToString();
-            OnUpdate?.Invoke(subscriberUpdateMessage);
+            string subscriberUpdateMessage = createdArticle.ToString();
+            OnUpdate?.Invoke(this, new PublishEventArgs(subscriberUpdateMessage));
         }
 
         public void Update(Article article, string title, string description)
@@ -26,7 +26,7 @@ namespace _03_CustomEventsInPractice.Models
             //actually it should call repository with article id to get the article
             Article updatedArticle = article.Update(title, description);
             string subscriberUpdateMessage = $"Article with {updatedArticle.Id} updated. New title = {title}, description = {description}";
-            OnUpdate?.Invoke(subscriberUpdateMessage);
+            OnUpdate?.Invoke(this, new PublishEventArgs(subscriberUpdateMessage));
         }
 
     }

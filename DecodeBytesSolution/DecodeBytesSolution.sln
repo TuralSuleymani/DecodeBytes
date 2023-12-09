@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_CustomEventsInPractice.E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomEventsInPractice.Common", "CustomEventsInPractice.Common\CustomEventsInPractice.Common.csproj", "{9EFF2EE1-4AFF-4A50-BA8D-5037D840DFB1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_CustomEventsInPractice.RecommendedEvents", "04_CustomEventsInPractice.RecommendedEvents\04_CustomEventsInPractice.RecommendedEvents.csproj", "{AA23E859-7D1B-414F-91B6-A891C97B875D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{9EFF2EE1-4AFF-4A50-BA8D-5037D840DFB1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EFF2EE1-4AFF-4A50-BA8D-5037D840DFB1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EFF2EE1-4AFF-4A50-BA8D-5037D840DFB1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA23E859-7D1B-414F-91B6-A891C97B875D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA23E859-7D1B-414F-91B6-A891C97B875D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA23E859-7D1B-414F-91B6-A891C97B875D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA23E859-7D1B-414F-91B6-A891C97B875D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

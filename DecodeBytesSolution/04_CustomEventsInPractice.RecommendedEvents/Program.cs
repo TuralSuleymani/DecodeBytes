@@ -1,5 +1,6 @@
 ﻿using _03_CustomEventsInPractice.Events.Models;
-using _03_CustomEventsInPractice.Models;
+using _04_CustomEventsInPractice.RecommendedEvents.Contracts;
+using _04_CustomEventsInPractice.RecommendedEvents.Models;
 using CustomEventsInPractice.Common;
 
 namespace _03_CustomEventsInPractice.Events
@@ -20,17 +21,20 @@ namespace _03_CustomEventsInPractice.Events
 
             //or
 
-            author.OnUpdate += firstUser.Update;
-            author.OnUpdate += secondUser.Update;
+            EventHandler<PublishEventArgs> firstUserHandler
+                = new((obj, pArgs) => firstUser.Update(pArgs.Message));
+
+            author.OnUpdate += firstUserHandler;
+            author.OnUpdate += (obj, e) => secondUser.Update(e.Message);
 
             Console.WriteLine("--------First publication-----------");
             author.Publish(article);
-            
+
             Console.WriteLine();
             Console.WriteLine("--------Changes in article-----------");
 
             article = article.WithTitle("Another title");
-            author.OnUpdate -= secondUser.Update;
+            author.OnUpdate -= firstUserHandler;
             author.Publish(article);
         }
     }
