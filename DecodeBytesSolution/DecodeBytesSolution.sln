@@ -3,9 +3,57 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecodeBytesUI", "DecodeBytesUI\DecodeBytesUI.csproj", "{E8AEA2DE-DE00-4D85-B1D1-87C5206C2DF5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecodeBytes.Provider", "DecodeBytes.Provider\DecodeBytes.Provider.csproj", "{529BB12F-6D30-4EE3-95FD-ECC5C4C1DB3D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EdenZeroBankProvider", "EdenZeroBankProvider\EdenZeroBankProvider.csproj", "{8F17D6D7-207C-4F70-942D-B85FA1A05297}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecodeBytesWPFUI", "DecodeBytesWPFUI\DecodeBytesWPFUI.csproj", "{E866B070-5B93-49FD-A467-70D8F1371157}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Providers", "Providers", "{A62DA10B-8F73-47DD-906C-CDA57FC9533E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecodeBytes.Common", "DecodeBytes.Common\DecodeBytes.Common.csproj", "{3047A7B6-9FBF-4080-B783-9A86C5A5A428}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrivateNMBankProvider", "PrivateNMBankProvider\PrivateNMBankProvider.csproj", "{6D033F8E-57D3-4E30-A850-64D3F5F96A3E}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8AEA2DE-DE00-4D85-B1D1-87C5206C2DF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8AEA2DE-DE00-4D85-B1D1-87C5206C2DF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8AEA2DE-DE00-4D85-B1D1-87C5206C2DF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8AEA2DE-DE00-4D85-B1D1-87C5206C2DF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{529BB12F-6D30-4EE3-95FD-ECC5C4C1DB3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{529BB12F-6D30-4EE3-95FD-ECC5C4C1DB3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{529BB12F-6D30-4EE3-95FD-ECC5C4C1DB3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{529BB12F-6D30-4EE3-95FD-ECC5C4C1DB3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F17D6D7-207C-4F70-942D-B85FA1A05297}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F17D6D7-207C-4F70-942D-B85FA1A05297}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F17D6D7-207C-4F70-942D-B85FA1A05297}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F17D6D7-207C-4F70-942D-B85FA1A05297}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E866B070-5B93-49FD-A467-70D8F1371157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E866B070-5B93-49FD-A467-70D8F1371157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E866B070-5B93-49FD-A467-70D8F1371157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E866B070-5B93-49FD-A467-70D8F1371157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3047A7B6-9FBF-4080-B783-9A86C5A5A428}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3047A7B6-9FBF-4080-B783-9A86C5A5A428}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3047A7B6-9FBF-4080-B783-9A86C5A5A428}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3047A7B6-9FBF-4080-B783-9A86C5A5A428}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D033F8E-57D3-4E30-A850-64D3F5F96A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D033F8E-57D3-4E30-A850-64D3F5F96A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D033F8E-57D3-4E30-A850-64D3F5F96A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D033F8E-57D3-4E30-A850-64D3F5F96A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8F17D6D7-207C-4F70-942D-B85FA1A05297} = {A62DA10B-8F73-47DD-906C-CDA57FC9533E}
+		{6D033F8E-57D3-4E30-A850-64D3F5F96A3E} = {A62DA10B-8F73-47DD-906C-CDA57FC9533E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {48EB9A4B-D237-4815-A1C0-5CB8809AC550}
