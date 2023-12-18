@@ -33,7 +33,7 @@
             label1 = new Label();
             label2 = new Label();
             txbx_amount = new TextBox();
-            button1 = new Button();
+            btn_checkBalance = new Button();
             SuspendLayout();
             // 
             // btn_addToBalance
@@ -78,22 +78,22 @@
             txbx_amount.Size = new Size(159, 23);
             txbx_amount.TabIndex = 3;
             // 
-            // button1
+            // btn_checkBalance
             // 
-            button1.Location = new Point(406, 40);
-            button1.Name = "button1";
-            button1.Size = new Size(108, 35);
-            button1.TabIndex = 5;
-            button1.Text = "Check Balance";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btn_checkBalance.Location = new Point(406, 40);
+            btn_checkBalance.Name = "btn_checkBalance";
+            btn_checkBalance.Size = new Size(108, 35);
+            btn_checkBalance.TabIndex = 5;
+            btn_checkBalance.Text = "Check Balance";
+            btn_checkBalance.UseVisualStyleBackColor = true;
+            btn_checkBalance.Click += btnCheckBalance_Click;
             // 
             // BankForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(540, 254);
-            Controls.Add(button1);
+            Controls.Add(btn_checkBalance);
             Controls.Add(label2);
             Controls.Add(txbx_amount);
             Controls.Add(label1);
@@ -114,6 +114,6 @@
         private Label label1;
         private Label label2;
         private TextBox txbx_amount;
-        private Button button1;
+        private Button btn_checkBalance;
     }
 }

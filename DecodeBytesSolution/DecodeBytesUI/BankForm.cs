@@ -18,13 +18,23 @@ namespace DecodeBytes.WinForm
 
         private void btn_addToBalance_Click(object sender, EventArgs e)
         {
+            if(String.IsNullOrEmpty(txbx_amount.Text)|| String.IsNullOrEmpty(txbx_cardNumber.Text))
+            {
+                MessageBox.Show("Not allowed empty input");
+                return;
+            }
             CardNumber cardNumber = new CardNumber(txbx_cardNumber.Text);
             decimal amount = Convert.ToDecimal(txbx_amount.Text);
             _bankProvider.AddToBalance(cardNumber, amount);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnCheckBalance_Click(object sender, EventArgs e)
         {
+            if (String.IsNullOrEmpty(txbx_cardNumber.Text))
+            {
+                MessageBox.Show("Not allowed empty input");
+                return;
+            }
             CardNumber cardNumber = new CardNumber(txbx_cardNumber.Text);
            decimal balance = _bankProvider.GetBalance(cardNumber);
             MessageBox.Show(balance.ToString());
