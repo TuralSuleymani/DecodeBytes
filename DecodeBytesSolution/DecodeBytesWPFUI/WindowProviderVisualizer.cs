@@ -3,7 +3,7 @@ using DecodeBytes.Common.Implementations;
 using DecodeBytes.Provider;
 using System.Windows.Controls;
 
-namespace DecodeBytesWPFUI
+namespace DecodeBytes.WPF
 {
     /// <summary>
     /// Responsible for provider visualisation

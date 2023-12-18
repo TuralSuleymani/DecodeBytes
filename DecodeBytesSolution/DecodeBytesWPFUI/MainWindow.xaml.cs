@@ -1,6 +1,6 @@
 ﻿using System.Windows;
 
-namespace DecodeBytesWPFUI
+namespace DecodeBytes.WPF
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

@@ -2,7 +2,7 @@
 using DecodeBytes.Common.Implementations;
 using DecodeBytes.Provider;
 
-namespace DecodeBytesUI
+namespace DecodeBytes.WinForm
 {
     /// <summary>
     /// Responsible for provider visualisation

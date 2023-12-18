@@ -1,4 +1,4 @@
-namespace DecodeBytesUI
+namespace DecodeBytes.WinForm
 {
     internal static class Program
     {

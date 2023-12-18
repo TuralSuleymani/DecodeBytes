@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecodeBytesUI", "DecodeBytesUI\DecodeBytesUI.csproj", "{E8AEA2DE-DE00-4D85-B1D1-87C5206C2DF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecodeBytes.WinForm", "DecodeBytesUI\DecodeBytes.WinForm.csproj", "{E8AEA2DE-DE00-4D85-B1D1-87C5206C2DF5}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecodeBytes.Provider", "DecodeBytes.Provider\DecodeBytes.Provider.csproj", "{529BB12F-6D30-4EE3-95FD-ECC5C4C1DB3D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EdenZeroBankProvider", "EdenZeroBankProvider\EdenZeroBankProvider.csproj", "{8F17D6D7-207C-4F70-942D-B85FA1A05297}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecodeBytesWPFUI", "DecodeBytesWPFUI\DecodeBytesWPFUI.csproj", "{E866B070-5B93-49FD-A467-70D8F1371157}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecodeBytes.WPF", "DecodeBytesWPFUI\DecodeBytes.WPF.csproj", "{E866B070-5B93-49FD-A467-70D8F1371157}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Providers", "Providers", "{A62DA10B-8F73-47DD-906C-CDA57FC9533E}"
 EndProject

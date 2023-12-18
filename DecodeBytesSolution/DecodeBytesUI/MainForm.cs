@@ -1,4 +1,4 @@
-namespace DecodeBytesUI
+namespace DecodeBytes.WinForm
 {
     public partial class MainForm : Form
     {

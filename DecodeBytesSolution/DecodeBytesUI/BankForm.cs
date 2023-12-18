@@ -1,6 +1,6 @@
 ﻿using DecodeBytes.Provider;
 
-namespace DecodeBytesUI
+namespace DecodeBytes.WinForm
 {
     public partial class BankForm : Form
     {
