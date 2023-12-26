@@ -2,6 +2,10 @@
 {
     public record Author : DomainEntity
     {
+        public Author()
+        {
+            
+        }
         public Author(string name, string description)
         {
             Name = name;

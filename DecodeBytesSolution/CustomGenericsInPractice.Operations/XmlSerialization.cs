@@ -4,14 +4,14 @@ using System.Xml.Serialization;
 
 namespace CustomGenericsInPractice.Operations
 {
-    public class Operation
+    public class XmlSerialization<T> : ISerialization<T> where T : DomainEntity
     {
-        public string AsXml(Article article)
+        public string Serialize(T model)
         {
-            XmlSerializer xmlSerializer = new XmlSerializer(typeof(Article));
+            XmlSerializer serializer = new XmlSerializer(typeof(T));
             using var stringWriter = new StringWriter();
             using XmlTextWriter writer = new XmlTextWriter(stringWriter) { Formatting = Formatting.Indented };
-            xmlSerializer.Serialize(writer, article);
+            serializer.Serialize(writer, model);
             return stringWriter.ToString();
         }
     }

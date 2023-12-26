@@ -2,6 +2,10 @@
 {
     public record Article : DomainEntity
     {
+        public Article()
+        {
+            
+        }
         public Article(string title, string description, Guid authorId)
         {
             Title = title;
