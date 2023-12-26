@@ -5,6 +5,14 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomGenericsInPractice.Common", "CustomGenericsInPractice.Common\CustomGenericsInPractice.Common.csproj", "{9D08B00D-1AFF-4AC6-ABA2-FF5D20B7B897}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomGenericsInPractice.Repository", "CustomGenericsInPractice.Repository\CustomGenericsInPractice.Repository.csproj", "{D23FACFC-0735-4030-BE78-A2832A43FF4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomGenericsInPractice.Service", "CustomGenericsInPractice.Service\CustomGenericsInPractice.Service.csproj", "{57F37A20-B215-488C-B373-07981F1D18B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomGenericsInPractice.Operations", "CustomGenericsInPractice.Operations\CustomGenericsInPractice.Operations.csproj", "{031E9C4B-DB52-45D6-8146-180A6C9BE060}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomGenericsInPractice.ConsoleApp", "CustomGenericsInPractice.ConsoleApp\CustomGenericsInPractice.ConsoleApp.csproj", "{491A4829-5628-4329-9AAF-AEEDE45DE420}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{9D08B00D-1AFF-4AC6-ABA2-FF5D20B7B897}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9D08B00D-1AFF-4AC6-ABA2-FF5D20B7B897}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9D08B00D-1AFF-4AC6-ABA2-FF5D20B7B897}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D23FACFC-0735-4030-BE78-A2832A43FF4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D23FACFC-0735-4030-BE78-A2832A43FF4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D23FACFC-0735-4030-BE78-A2832A43FF4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D23FACFC-0735-4030-BE78-A2832A43FF4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57F37A20-B215-488C-B373-07981F1D18B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57F37A20-B215-488C-B373-07981F1D18B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57F37A20-B215-488C-B373-07981F1D18B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57F37A20-B215-488C-B373-07981F1D18B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{031E9C4B-DB52-45D6-8146-180A6C9BE060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{031E9C4B-DB52-45D6-8146-180A6C9BE060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{031E9C4B-DB52-45D6-8146-180A6C9BE060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{031E9C4B-DB52-45D6-8146-180A6C9BE060}.Release|Any CPU.Build.0 = Release|Any CPU
+		{491A4829-5628-4329-9AAF-AEEDE45DE420}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{491A4829-5628-4329-9AAF-AEEDE45DE420}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{491A4829-5628-4329-9AAF-AEEDE45DE420}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{491A4829-5628-4329-9AAF-AEEDE45DE420}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

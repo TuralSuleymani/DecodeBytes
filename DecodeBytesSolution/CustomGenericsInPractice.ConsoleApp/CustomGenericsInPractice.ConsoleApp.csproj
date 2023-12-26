@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CustomGenericsInPractice.Common\CustomGenericsInPractice.Common.csproj" />
+    <ProjectReference Include="..\CustomGenericsInPractice.Operations\CustomGenericsInPractice.Operations.csproj" />
+    <ProjectReference Include="..\CustomGenericsInPractice.Repository\CustomGenericsInPractice.Repository.csproj" />
+    <ProjectReference Include="..\CustomGenericsInPractice.Service\CustomGenericsInPractice.Service.csproj" />
+  </ItemGroup>
+
+</Project>
