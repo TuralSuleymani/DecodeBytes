@@ -3,13 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecodeBytes.Repository", "DecodeBytes.Repository\DecodeBytes.Repository.csproj", "{61EA950C-5F68-45F0-89C8-CAF5FFBA205A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecodeBytes.Repository", "DecodeBytes.Repository\DecodeBytes.Repository.csproj", "{61EA950C-5F68-45F0-89C8-CAF5FFBA205A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecodeBytes.Service", "DecodeBytes.Service\DecodeBytes.Service.csproj", "{3314D173-DD95-431D-AE04-266B4F73D2C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecodeBytes.Service", "DecodeBytes.Service\DecodeBytes.Service.csproj", "{3314D173-DD95-431D-AE04-266B4F73D2C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecodeBytes.UI", "DecodeBytes.UI\DecodeBytes.UI.csproj", "{15D672C3-2536-4F6D-8B8C-00F1F30230B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecodeBytes.UI", "DecodeBytes.UI\DecodeBytes.UI.csproj", "{15D672C3-2536-4F6D-8B8C-00F1F30230B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecodeBytes.Entity", "DecodeBytes.Entity\DecodeBytes.Entity.csproj", "{3AFB1B96-B6DB-441C-9B86-F4AD7CB64A84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecodeBytes.Entity", "DecodeBytes.Entity\DecodeBytes.Entity.csproj", "{3AFB1B96-B6DB-441C-9B86-F4AD7CB64A84}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Layered", "Layered", "{162B7B4F-373D-419C-B1D7-23B931DE4F08}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Simple", "Simple", "{F6EB95EA-0212-42FE-BC30-7FA70E475334}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecodeBytes.AsyncAwaitDemo", "DecodeBytes.AsyncAwaitDemo\DecodeBytes.AsyncAwaitDemo.csproj", "{135754B7-BB49-4476-8472-CB0F57E7A734}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecodeBytes.AsyncAwaitDecompiled", "DecodeBytes.AsyncAwaitDecompiled\DecodeBytes.AsyncAwaitDecompiled.csproj", "{405B2BAB-75FD-4D2E-A0E6-8B734E0619D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,9 +41,25 @@ Global
 		{3AFB1B96-B6DB-441C-9B86-F4AD7CB64A84}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AFB1B96-B6DB-441C-9B86-F4AD7CB64A84}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AFB1B96-B6DB-441C-9B86-F4AD7CB64A84}.Release|Any CPU.Build.0 = Release|Any CPU
+		{135754B7-BB49-4476-8472-CB0F57E7A734}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{135754B7-BB49-4476-8472-CB0F57E7A734}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{135754B7-BB49-4476-8472-CB0F57E7A734}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{135754B7-BB49-4476-8472-CB0F57E7A734}.Release|Any CPU.Build.0 = Release|Any CPU
+		{405B2BAB-75FD-4D2E-A0E6-8B734E0619D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{405B2BAB-75FD-4D2E-A0E6-8B734E0619D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{405B2BAB-75FD-4D2E-A0E6-8B734E0619D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{405B2BAB-75FD-4D2E-A0E6-8B734E0619D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{61EA950C-5F68-45F0-89C8-CAF5FFBA205A} = {162B7B4F-373D-419C-B1D7-23B931DE4F08}
+		{3314D173-DD95-431D-AE04-266B4F73D2C0} = {162B7B4F-373D-419C-B1D7-23B931DE4F08}
+		{15D672C3-2536-4F6D-8B8C-00F1F30230B5} = {162B7B4F-373D-419C-B1D7-23B931DE4F08}
+		{3AFB1B96-B6DB-441C-9B86-F4AD7CB64A84} = {162B7B4F-373D-419C-B1D7-23B931DE4F08}
+		{135754B7-BB49-4476-8472-CB0F57E7A734} = {F6EB95EA-0212-42FE-BC30-7FA70E475334}
+		{405B2BAB-75FD-4D2E-A0E6-8B734E0619D4} = {F6EB95EA-0212-42FE-BC30-7FA70E475334}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {48EB9A4B-D237-4815-A1C0-5CB8809AC550}
