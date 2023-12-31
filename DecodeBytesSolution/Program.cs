@@ -6,8 +6,7 @@ namespace CsharpDelegates
     {
         static void Main()
         {
-            //var cards = GetCardsByCustomerId(3);
-            var cards = GetCards(x=>x.HolderName== "Hanma Baki");
+            var cards = GetCards(x => x.HolderName == "Hanma Baki");
             foreach (var card in cards)
             {
                 Console.WriteLine(card);
@@ -19,7 +18,8 @@ namespace CsharpDelegates
         {
             List<Card> cards = [];
             using var dbcontext = new CustomerAppDbContext();
-            foreach (var card in dbcontext.Cards)
+				var dbCards = dbcontext.Cards.ToList();//materialize
+            foreach (var card in dbCards)
             {
                 if(card.CustomerId == 4)
                 {
@@ -33,7 +33,8 @@ namespace CsharpDelegates
         {
             List<Card> cards = [];
             using var dbcontext = new CustomerAppDbContext();
-            foreach (var card in dbcontext.Cards)
+            var dbCards = dbcontext.Cards.ToList();//materialize
+            foreach (var card in dbCards)
             {
                 if (card.CustomerId == customerId)
                 {
@@ -47,7 +48,8 @@ namespace CsharpDelegates
         {
             List<Card> cards = [];
             using var dbcontext = new CustomerAppDbContext();
-            foreach (var card in dbcontext.Cards)
+            var dbCards = dbcontext.Cards.ToList();//materialize
+            foreach (var card in dbCards)
             {
                 if (customerDelegate(card.CustomerId))
                 {
@@ -61,7 +63,8 @@ namespace CsharpDelegates
         {
             List<Card> cards = [];
             using var dbcontext = new CustomerAppDbContext();
-            foreach (var card in dbcontext.Cards)
+            var dbCards = dbcontext.Cards.ToList();//materialize
+            foreach (var card in dbCards)
             {
                 if (predicate(card))
                 {
