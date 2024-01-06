@@ -1,5 +1,4 @@
 ﻿using System.Diagnostics;
-using System.Net.Http;
 using System.Windows;
 using System.Windows.Documents;
 using WpfAsyncUI.Services;
@@ -18,22 +17,22 @@ namespace WpfAsyncUI
             _documentService = new WebDocumentService();
         }
 
-        private async void load_Click(object sender, RoutedEventArgs e)
-        {
-            Debug.WriteLine("Operation started. Normal flow");
-            string contentUrl = "https://www.c-sharpcorner.com/article/microservices-vs-monoliths/";
-            var articleContent = await _documentService.GetContentAsync(contentUrl);
-            txbx_content.Document = AsFlowDocument(articleContent);
-        }
-
-        //private void load_Click(object sender, RoutedEventArgs e)
+        //private async void load_Click(object sender, RoutedEventArgs e)
         //{
-        //    Debug.WriteLine("Operation started. Deadlock");
+        //    Debug.WriteLine("Operation started. Normal flow");
         //    string contentUrl = "https://www.c-sharpcorner.com/article/microservices-vs-monoliths/";
-        //    var documentTask = _documentService.GetContentAsync(contentUrl);//schedule
-        //    documentTask.Wait();//block the UI
-        //    txbx_content.Document = AsFlowDocument("You are not going to see this message");
+        //    var articleContent = await _documentService.GetContentAsync(contentUrl);
+        //    txbx_content.Document = AsFlowDocument(articleContent);
         //}
+
+        private void load_Click(object sender, RoutedEventArgs e)
+        {
+            Debug.WriteLine("Operation started. Deadlock");
+            string contentUrl = "https://www.c-sharpcorner.com/article/microservices-vs-monoliths/";
+            var documentTask = _documentService.GetContentAsync(contentUrl);//schedule
+            documentTask.Wait();//block the UI
+            txbx_content.Document = AsFlowDocument("You are not going to see this message");
+        }
 
         private static FlowDocument AsFlowDocument(string content)
         {
