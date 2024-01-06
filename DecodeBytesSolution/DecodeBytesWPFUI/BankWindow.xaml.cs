@@ -1,4 +1,5 @@
-﻿using DecodeBytes.Provider;
+﻿using DecodeBytes.Common.Implementations;
+using DecodeBytes.Provider;
 using System.Windows;
 
 namespace DecodeBytes.WPF
@@ -8,8 +9,8 @@ namespace DecodeBytes.WPF
     /// </summary>
     public partial class BankWindow : Window
     {
-        private IBankProvider _bankProvider;
-        public BankWindow(IBankProvider bankProvider)
+        private BankProvider _bankProvider;
+        public BankWindow(BankProvider bankProvider)
         {
             InitializeComponent();
             _bankProvider = bankProvider;

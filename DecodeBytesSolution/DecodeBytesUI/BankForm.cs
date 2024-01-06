@@ -1,11 +1,12 @@
-﻿using DecodeBytes.Provider;
+﻿using DecodeBytes.Common.Implementations;
+using DecodeBytes.Provider;
 
 namespace DecodeBytes.WinForm
 {
     public partial class BankForm : Form
     {
-        private readonly IBankProvider _bankProvider;
-        public BankForm(IBankProvider bankProvider)
+        private readonly BankProvider _bankProvider;
+        public BankForm(BankProvider bankProvider)
         {
             _bankProvider = bankProvider;
             InitializeComponent();

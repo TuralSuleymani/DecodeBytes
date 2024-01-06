@@ -2,17 +2,17 @@
 
 namespace EdenZeroBankProvider
 {
-    public class EdenZeroProvider : IBankProvider
+    [BankProvider("Eden Zero")]
+    public class EdenZeroProvider
     {
         //it should encapsulate the service call, but for simplicity,we're using in-memory data structure
-
-        private Dictionary<string, decimal> Cards;
-        public string ProviderName => "EdenZero";
+        private readonly Dictionary<string, decimal> Cards;
         public EdenZeroProvider()
         {
            Cards = LoadCards();
         }
 
+        [BankOperation(BankOperationType.AddToBalance)]
         public void AddToBalance(CardNumber cardNumber, decimal amount)
         {
             if (!IsCardNumberExist(cardNumber.Number))
@@ -32,6 +32,7 @@ namespace EdenZeroBankProvider
             };
         }
 
+        [BankOperation(BankOperationType.GetBalance)]
         public decimal GetBalance(CardNumber cardNumber)
         {
             if (!IsCardNumberExist(cardNumber.Number))

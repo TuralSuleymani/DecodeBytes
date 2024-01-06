@@ -10,10 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DecodeBytes.Common\DecodeBytes.Common.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="libs\" />
+    <ProjectReference Include="..\DecodeBytes.Provider\DecodeBytes.Provider.csproj" />
   </ItemGroup>
 
 </Project>

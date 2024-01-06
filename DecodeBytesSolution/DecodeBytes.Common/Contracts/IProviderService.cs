@@ -1,9 +1,9 @@
-﻿using DecodeBytes.Provider;
+﻿using DecodeBytes.Common.Implementations;
 
 namespace DecodeBytes.Common.Contracts
 {
     public interface IProviderService
     {
-        IEnumerable<IBankProvider> GetProviders();
+        IEnumerable<BankProvider> GetProviders();
     }
 }

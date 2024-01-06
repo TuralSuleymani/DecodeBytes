@@ -2,7 +2,8 @@
 
 namespace PrivateNMBankProvider
 {
-    public class PrivateNMProvider : IBankProvider
+    [BankProvider("PrivateNM Bank")]
+    public class PrivateNMProvider
     {
         //it should encapsulate the service call, but for simplicity,we're using in-memory data structure
 
@@ -14,6 +15,7 @@ namespace PrivateNMBankProvider
             Cards = LoadCards();
         }
 
+        [BankOperation(BankOperationType.AddToBalance)]
         public void AddToBalance(CardNumber cardNumber, decimal amount)
         {
             if (!IsCardNumberExist(cardNumber.Number))
@@ -34,6 +36,7 @@ namespace PrivateNMBankProvider
             };
         }
 
+        [BankOperation(BankOperationType.GetBalance)]
         public decimal GetBalance(CardNumber cardNumber)
         {
             if (!IsCardNumberExist(cardNumber.Number))

@@ -43,7 +43,7 @@ namespace DecodeBytes.WPF
             _locationY = 34;
         }
 
-        private void AddProvider(IBankProvider provider)
+        private void AddProvider(BankProvider provider)
         {
             Button button = new()
             {
