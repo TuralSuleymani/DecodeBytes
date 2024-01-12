@@ -10,7 +10,7 @@ namespace _02_CustomEventsInPractice.Delegates
         static void Main(string[] args)
         {
 
-            Author author = new("James", "Senior Developer");
+            Author author = new("James", "Senior Developer");//publisher
 
             Article article = new("My simple article", "lorem ipsum", author.Id);
 

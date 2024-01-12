@@ -13,8 +13,9 @@
                 new Employee(3, "Daniel", 5600)
             ];
             
-            //LINQ methods..
+           // employeeList.FirstOrDefault()
 
+            //LINQ methods..
             Console.WriteLine("Hello, World!");
         }
     }

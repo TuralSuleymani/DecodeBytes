@@ -26,8 +26,6 @@ namespace EAP
         {
             document = new XmlDocument();
 
-            Thread.Sleep(3000);
-
             document.Load(@"http://restapi.adequateshop.com/api/Traveler?page=1");
         }
 

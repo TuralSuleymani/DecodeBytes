@@ -55,6 +55,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FuncProgramming", "FuncProg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BehindTheScenesOfDelegates", "BehindTheScenesOfDelegates\BehindTheScenesOfDelegates.csproj", "{F4623622-4007-4CF7-83B1-6D484E9D01E3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EAP_Console", "EAP_Console\EAP_Console.csproj", "{ADC96ACA-B5B0-49A7-B874-68D42C1FCF81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{F4623622-4007-4CF7-83B1-6D484E9D01E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F4623622-4007-4CF7-83B1-6D484E9D01E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F4623622-4007-4CF7-83B1-6D484E9D01E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ADC96ACA-B5B0-49A7-B874-68D42C1FCF81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADC96ACA-B5B0-49A7-B874-68D42C1FCF81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADC96ACA-B5B0-49A7-B874-68D42C1FCF81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADC96ACA-B5B0-49A7-B874-68D42C1FCF81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -152,6 +158,7 @@ Global
 		{08BA8D71-0D0C-490A-947E-FE178C1D1EA8} = {B346F747-7352-4413-A7C9-A6D3D8F670C2}
 		{1F5852C6-D02F-43BA-BD86-74520F2AFD32} = {1B5ACB6A-BD24-4501-9F5E-582DCD3541EE}
 		{5B2B973E-21F5-4B52-85EA-A962D1A682D9} = {D564F091-ADCE-4145-86FE-EDC22E483203}
+		{ADC96ACA-B5B0-49A7-B874-68D42C1FCF81} = {BC148D25-20D7-40D2-B597-C615634265C6}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {48EB9A4B-D237-4815-A1C0-5CB8809AC550}
