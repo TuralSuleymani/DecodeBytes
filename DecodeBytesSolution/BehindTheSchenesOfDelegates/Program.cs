@@ -1,4 +1,4 @@
-﻿namespace BehindTheSchenesOfDelegates
+﻿namespace BehindTheScenesOfDelegates
 {
     internal class Program
     {
