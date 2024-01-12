@@ -4,8 +4,7 @@
     {
         static void Main(string[] args)
         {
-            Func<decimal, decimal> multipleDelegate = (d) => d * 4;
-            Console.WriteLine(multipleDelegate(5));
+            Console.WriteLine("Hello, World!");
         }
     }
 }
