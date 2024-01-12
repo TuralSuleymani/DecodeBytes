@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Event-driven Programming"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.Event-base Asynchronous Pattern", "2.Event-base Asynchronous Pattern", "{9163AA18-D1B8-46B0-A1C3-3FB27D0E1EB0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BehindTheSchenesOfDelegates", "BehindTheSchenesOfDelegates\BehindTheSchenesOfDelegates.csproj", "{CA8F2760-1E6B-41E8-9D0A-0110E0A87261}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BehindTheScenesOfDelegates", "BehindTheSchenesOfDelegates\BehindTheScenesOfDelegates.csproj", "{CA8F2760-1E6B-41E8-9D0A-0110E0A87261}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Observer design pattern", "3. Observer design pattern", "{F9E54012-E093-41FB-B082-8B8AEE969A36}"
 EndProject
@@ -45,15 +45,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StrategyWithDelegate", "Str
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. LINQ", "5. LINQ", "{B346F747-7352-4413-A7C9-A6D3D8F670C2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqApp", "LinqApp\LinqApp.csproj", "{08BA8D71-0D0C-490A-947E-FE178C1D1EA8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LinqApp", "LinqApp\LinqApp.csproj", "{08BA8D71-0D0C-490A-947E-FE178C1D1EA8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6. Concurrency", "6. Concurrency", "{1B5ACB6A-BD24-4501-9F5E-582DCD3541EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConcurrencyApp", "ConcurrencyApp\ConcurrencyApp.csproj", "{1F5852C6-D02F-43BA-BD86-74520F2AFD32}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConcurrencyApp", "ConcurrencyApp\ConcurrencyApp.csproj", "{1F5852C6-D02F-43BA-BD86-74520F2AFD32}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "7. Functional programming", "7. Functional programming", "{D564F091-ADCE-4145-86FE-EDC22E483203}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FuncProgramming", "FuncProgramming\FuncProgramming.csproj", "{5B2B973E-21F5-4B52-85EA-A962D1A682D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FuncProgramming", "FuncProgramming\FuncProgramming.csproj", "{5B2B973E-21F5-4B52-85EA-A962D1A682D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
