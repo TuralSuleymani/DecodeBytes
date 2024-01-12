@@ -13,9 +13,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecodeBytes.WPF", "DecodeBy
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Providers", "Providers", "{A62DA10B-8F73-47DD-906C-CDA57FC9533E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecodeBytes.Common", "DecodeBytes.Common\DecodeBytes.Common.csproj", "{3047A7B6-9FBF-4080-B783-9A86C5A5A428}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DecodeBytes.Common", "DecodeBytes.Common\DecodeBytes.Common.csproj", "{3047A7B6-9FBF-4080-B783-9A86C5A5A428}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrivateNMBankProvider", "PrivateNMBankProvider\PrivateNMBankProvider.csproj", "{6D033F8E-57D3-4E30-A850-64D3F5F96A3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrivateNMBankProvider", "PrivateNMBankProvider\PrivateNMBankProvider.csproj", "{6D033F8E-57D3-4E30-A850-64D3F5F96A3E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.Event-driven programming", "1.Event-driven programming", "{E23D9112-6FF5-4734-BD33-9FAE0E39E266}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.EAP", "2.EAP", "{9163AA18-D1B8-46B0-A1C3-3FB27D0E1EB0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BehindTheSchenesOfDelegates", "BehindTheSchenesOfDelegates\BehindTheSchenesOfDelegates.csproj", "{CA8F2760-1E6B-41E8-9D0A-0110E0A87261}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,12 +53,21 @@ Global
 		{6D033F8E-57D3-4E30-A850-64D3F5F96A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D033F8E-57D3-4E30-A850-64D3F5F96A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D033F8E-57D3-4E30-A850-64D3F5F96A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA8F2760-1E6B-41E8-9D0A-0110E0A87261}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA8F2760-1E6B-41E8-9D0A-0110E0A87261}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA8F2760-1E6B-41E8-9D0A-0110E0A87261}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA8F2760-1E6B-41E8-9D0A-0110E0A87261}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{E8AEA2DE-DE00-4D85-B1D1-87C5206C2DF5} = {E23D9112-6FF5-4734-BD33-9FAE0E39E266}
+		{529BB12F-6D30-4EE3-95FD-ECC5C4C1DB3D} = {E23D9112-6FF5-4734-BD33-9FAE0E39E266}
 		{8F17D6D7-207C-4F70-942D-B85FA1A05297} = {A62DA10B-8F73-47DD-906C-CDA57FC9533E}
+		{E866B070-5B93-49FD-A467-70D8F1371157} = {E23D9112-6FF5-4734-BD33-9FAE0E39E266}
+		{A62DA10B-8F73-47DD-906C-CDA57FC9533E} = {E23D9112-6FF5-4734-BD33-9FAE0E39E266}
+		{3047A7B6-9FBF-4080-B783-9A86C5A5A428} = {E23D9112-6FF5-4734-BD33-9FAE0E39E266}
 		{6D033F8E-57D3-4E30-A850-64D3F5F96A3E} = {A62DA10B-8F73-47DD-906C-CDA57FC9533E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
