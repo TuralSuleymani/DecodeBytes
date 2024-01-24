@@ -41,7 +41,7 @@
             btn_start.TabIndex = 0;
             btn_start.Text = "Start";
             btn_start.UseVisualStyleBackColor = true;
-            btn_start.Click += this.btn_start_Click;
+           // btn_start.Click += this.btn_start_Click;
             // 
             // btn_cancel
             // 
@@ -51,7 +51,7 @@
             btn_cancel.TabIndex = 1;
             btn_cancel.Text = "Cancel";
             btn_cancel.UseVisualStyleBackColor = true;
-            btn_cancel.Click += this.btn_cancel_Click;
+            //btn_cancel.Click += this.btn_cancel_Click;
             // 
             // rcbx_text
             // 
