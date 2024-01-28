@@ -38,7 +38,7 @@ namespace ConsumerService
                 }
                 else
                     _logger.LogInformation("Nothing found to consume");
-                await Task.Delay(1000, stoppingToken);
+               // await Task.Delay(1000, stoppingToken);
             }
         }
     }
