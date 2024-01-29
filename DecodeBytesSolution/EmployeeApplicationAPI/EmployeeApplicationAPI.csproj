@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="confluent.kafka" Version="2.3.0" />
     <PackageReference Include="microsoft.entityframeworkcore.inmemory" Version="8.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>

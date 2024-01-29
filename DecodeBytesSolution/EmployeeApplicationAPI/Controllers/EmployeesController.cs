@@ -1,7 +1,9 @@
+using Confluent.Kafka;
 using EmployeeApplicationAPI.Database;
 using EmployeeApplicationAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Text.Json;
 
 namespace EmployeeApplicationAPI.Controllers
 {
@@ -25,6 +27,23 @@ namespace EmployeeApplicationAPI.Controllers
             var employee = new Employee(Guid.NewGuid(), name, surname);
             _dbContext.Employees.Add(employee);
             await _dbContext.SaveChangesAsync();
+
+            var message = new Message<string, string>()
+            {
+                Key = employee.Id.ToString(),
+                Value = JsonSerializer.Serialize(employee)
+            };
+
+            var producerConfig = new ProducerConfig()
+            {
+                BootstrapServers = "localhost:9092",
+                Acks = Acks.All
+            };
+
+            using(var producer = new ProducerBuilder<string,string>(producerConfig).Build())
+            {
+               await producer.ProduceAsync("employeeTopic", message);
+            }
             return CreatedAtAction(nameof(CreateEmployee), new { id = employee.Id }, employee);
         }
     }
