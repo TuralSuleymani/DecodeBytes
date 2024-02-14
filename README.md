@@ -2,7 +2,7 @@
 
 **General Information**
 
-This repository holds the code for the practical videos on the [#DecodeBytes](https://www.youtube.com/@DecodeByte/videos) channel.
+This repository holds the code for the practical videos on the [#DecodeBytes](https://www.youtube.com/@DecodeByte/videos) Youtube channel.
 
 **Channel link:** [DecodeBytes](https://www.youtube.com/@DecodeByte/videos)
 
