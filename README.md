@@ -1,4 +1,4 @@
-**Tutorial link** : [Master C# Interfaces Like a Senior Developer: Real-World Examples Unveiled!](https://youtu.be/6JD-RdpVauY?si=W4T02ohZ7EEB9DpZ)
+**Video Tutorial link** : [Master C# Interfaces Like a Senior Developer: Real-World Examples Unveiled!](https://youtu.be/6JD-RdpVauY?si=W4T02ohZ7EEB9DpZ)
 
 **General Information**
 
