@@ -1,4 +1,4 @@
-**Tutorial link** : [Master C# Events Like a Senior Developer: Real-World Examples Unveiled!](https://youtu.be/9H7PU-cy0Sw?si=RglZwBBbkCYDvLuL)
+**Video Tutorial link** : [Master C# Events Like a Senior Developer: Real-World Examples Unveiled!](https://youtu.be/9H7PU-cy0Sw?si=RglZwBBbkCYDvLuL)
 
 **General Information**
 
