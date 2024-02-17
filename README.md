@@ -1,4 +1,4 @@
-**Tutorial link** : [Master C# Generics Like a Senior Developer](https://youtu.be/2_OPdG-0xpQ?si=OEmlDE8GzvpkFoZg)
+**Video Tutorial link** : [Master C# Generics Like a Senior Developer](https://youtu.be/2_OPdG-0xpQ?si=OEmlDE8GzvpkFoZg)
 
 **General Information**
 
