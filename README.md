@@ -1,4 +1,4 @@
-**Tutorial link** : [Mastering Task Parallel Library in C#: Task, Task.Factory.StartNew, and Task.Run](https://youtu.be/3vK4ZPMZZ1E?si=AZ3dGeka0uqjIgM_)
+**Video Tutorial link** : [Mastering Task Parallel Library in C#: Task, Task.Factory.StartNew, and Task.Run](https://youtu.be/3vK4ZPMZZ1E?si=AZ3dGeka0uqjIgM_)
 
 **General Information**
 
