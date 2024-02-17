@@ -1,4 +1,4 @@
-**Tutorial link** : [Consumer Microservices: Practical Event Driven Architecture with C# and Apache](https://youtu.be/-0ZsmhdroF8?si=FPS0V81udmF3Smnw)
+**Video Tutorial link** : [Consumer Microservices: Practical Event Driven Architecture with C# and Apache](https://youtu.be/-0ZsmhdroF8?si=FPS0V81udmF3Smnw)
 
 **General Information**
 
