@@ -1,4 +1,4 @@
-**Tutorial link** : [Practical Event Driven Architecture with C# and Apache Kafka: Producer Microservices](https://youtu.be/pdcqn7bKmls?si=ufe6Z9rKoWft4t_m)
+**Video Tutorial link** : [Practical Event Driven Architecture with C# and Apache Kafka: Producer Microservices](https://youtu.be/pdcqn7bKmls?si=ufe6Z9rKoWft4t_m)
 
 **General Information**
 
