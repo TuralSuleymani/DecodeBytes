@@ -1,4 +1,4 @@
-**Tutorial link** : [Master C# Delegates Like a Senior Developer: Real-World Examples Unveiled!](https://youtu.be/kNyf0NOYalE?si=vT3X9trZ5nTYPRd4)
+**Video Tutorial link** : [Master C# Delegates Like a Senior Developer: Real-World Examples Unveiled!](https://youtu.be/kNyf0NOYalE?si=vT3X9trZ5nTYPRd4)
 
 **General Information**
 
