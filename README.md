@@ -1,4 +1,4 @@
-**Tutorial link** : [Master async UI with ConfigureAwait in C#](https://youtu.be/aN1Zp0KZGCA?si=rvRt58pjYs4gW_Ss)
+**Video Tutorial link** : [Master async UI with ConfigureAwait in C#](https://youtu.be/aN1Zp0KZGCA?si=rvRt58pjYs4gW_Ss)
 
 **General Information**
 
