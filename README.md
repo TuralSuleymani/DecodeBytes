@@ -1,4 +1,4 @@
-**Tutorial link** : [Master C# Attributes with Reflection Like a Senior Developer](https://youtu.be/_l64jwuEiho?si=uen1RIP3gh1MyGgK)
+**Video Tutorial link** : [Master C# Attributes with Reflection Like a Senior Developer](https://youtu.be/_l64jwuEiho?si=uen1RIP3gh1MyGgK)
 
 **General Information**
 
