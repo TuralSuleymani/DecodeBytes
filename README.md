@@ -1,4 +1,4 @@
-**Tutorial link** : [Advanced C# Delegates like a Senior Developer](https://youtu.be/LEcxrLb3OpY?si=Zv8Ecd_lcO69GfXE)
+**Video Tutorial link** : [Advanced C# Delegates like a Senior Developer](https://youtu.be/LEcxrLb3OpY?si=Zv8Ecd_lcO69GfXE)
 
 **General Information**
 
