@@ -1,4 +1,4 @@
-**Video Tutorial link** : [Writing pure MSIL/IL/CIL code: .NET internals, CLR, JIT compiler and more](https://youtu.be/ki66eCCgVXk)
+**Video Tutorial link** : [Writing Object-Oriented IL Code in .NET](https://youtu.be/D0dC9XT3eFE)
 
 **General Information**
 
