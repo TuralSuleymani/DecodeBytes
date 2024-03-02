@@ -43,6 +43,7 @@ namespace FunctionProgrammingIntro
 
             #region Tuples
            var userInfo = GetUserInfo();
+           
             #endregion
 
             #region local functions

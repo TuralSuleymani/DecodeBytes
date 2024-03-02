@@ -5,6 +5,8 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionProgrammingIntro", "FunctionProgrammingIntro\FunctionProgrammingIntro.csproj", "{143C230F-48FA-481E-A1F2-7017BE7EACDA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunctionProgrammingInPractice", "FunctionProgrammingInPractice\FunctionProgrammingInPractice.csproj", "{535E57B7-12A7-4890-988A-02C0EB699BAC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{143C230F-48FA-481E-A1F2-7017BE7EACDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{143C230F-48FA-481E-A1F2-7017BE7EACDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{143C230F-48FA-481E-A1F2-7017BE7EACDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{535E57B7-12A7-4890-988A-02C0EB699BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{535E57B7-12A7-4890-988A-02C0EB699BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{535E57B7-12A7-4890-988A-02C0EB699BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{535E57B7-12A7-4890-988A-02C0EB699BAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
