@@ -1,3 +1,5 @@
+**Video Tutorial link** : [Functional Programming With C# : What, Why, How?](https://youtu.be/qnq3zzwmSeY)
+
 This repository holds the code for the practical videos on the [#DecodeBytes](https://www.youtube.com/@DecodeByte/videos) channel.
 
 **Channel link:** [DecodeBytes](https://www.youtube.com/@DecodeByte/videos)
