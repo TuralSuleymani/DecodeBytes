@@ -10,16 +10,6 @@ namespace Domain.Models.Extensions
             return new ValidationException(message);
         }
 
-        public static T? IsNull<T>(this T? model, [CallerArgumentExpression("model")] string name = "")
-        {
-            if (model == null)
-            {
-                return model;
-            }
-
-            throw InvalidOp(name + " must be null.");
-        }
-
         public static T IsNotNull<T>(this T? model, [CallerArgumentExpression("model")] string name = "")
         {
             if (model != null)
