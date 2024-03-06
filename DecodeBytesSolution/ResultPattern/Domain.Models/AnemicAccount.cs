@@ -1,11 +1,12 @@
-﻿using Domain.Models.ValueTypes;
+﻿using Common;
+using Domain.Models.ValueTypes;
 
 namespace Domain.Models
 {
     /// <summary>
     /// Bad sign. Dont do it for real domain models
     /// </summary>
-    public class AnemicAccount
+    public class AnemicAccount:IDomainModel
     {
         public Guid AccountId { get; set; }
         public Guid CustomerId { get; set; }
