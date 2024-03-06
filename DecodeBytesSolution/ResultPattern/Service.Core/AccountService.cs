@@ -1,5 +1,4 @@
 ﻿using Common.Repository;
-using CSharpFunctionalExtensions;
 using Domain.Models;
 using Repository.Abstraction;
 using Service.Abstaction;
