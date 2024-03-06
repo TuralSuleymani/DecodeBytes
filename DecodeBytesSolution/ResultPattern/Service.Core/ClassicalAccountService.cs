@@ -9,13 +9,13 @@ namespace Service.Core
     internal class ClassicalAccountService(
               ICustomerService customerService
             , IAccountRepository accountRepository
-            , IUnitOfWork unitOfWork) : IAccountService
+            , IUnitOfWork unitOfWork) 
     {
         private readonly ICustomerService _customerService = customerService;
         private readonly IUnitOfWork _unitOfWork = unitOfWork;
         private readonly IAccountRepository _accountRepository = accountRepository;
 
-        public async Task<Account> AddAsync(Account account)
+        public async Task<AnemicAccount> AddAsync(AnemicAccount account)
         {
             //filtering(validation)
             account.AccountNumber.IsNotNull();

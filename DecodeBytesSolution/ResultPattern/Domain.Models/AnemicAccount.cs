@@ -6,7 +6,7 @@ namespace Domain.Models
     /// <summary>
     /// Bad sign. Dont do it for real domain models
     /// </summary>
-    public class AnemicAccount:IDomainModel
+    public class AnemicAccount : IDomainModel
     {
         public Guid AccountId { get; set; }
         public Guid CustomerId { get; set; }
