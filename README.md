@@ -1,4 +1,4 @@
-**Video Tutorial link** : [Refactoring from Exceptions to Result Pattern in C#](https://youtu.be/Pq4XLWxt-T8)
+**Video Tutorial link** : [Consumer Microservices: Practical Event Driven Architecture with C# and Apache](https://youtu.be/-0ZsmhdroF8?si=FPS0V81udmF3Smnw)
 
 **General Information**
 
