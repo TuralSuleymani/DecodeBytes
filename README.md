@@ -1,4 +1,8 @@
-This repository holds the code for the practical videos on the [#DecodeBytes](https://www.youtube.com/@DecodeByte/videos) channel.
+**Video Tutorial link** : [Refactoring from Exceptions to Result Pattern in C#](https://youtu.be/Pq4XLWxt-T8)
+
+**General Information**
+
+This repository holds the code for the practical videos on the [#DecodeBytes](https://www.youtube.com/@DecodeByte/videos) Youtube channel.
 
 **Channel link:** [DecodeBytes](https://www.youtube.com/@DecodeByte/videos)
 
