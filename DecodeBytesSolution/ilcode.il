@@ -1,17 +1,19 @@
 .assembly extern mscorlib {}
-.assembly firstILProject {}
-.module firstILProject.exe
+.assembly MyApp {}
+.module MyApp.exe
 
 .class public Program extends [mscorlib]System.Object
 {
- .method public static void MyMain(string[] args) cil managed 
-  {
-	.entrypoint
-	ldstr "Hello from IL code"
-	call void [mscorlib]System.Console::WriteLine(string)
-	call string [mscorlib]System.Console::ReadLine()
-	pop
-	ret
+.method public static void MyEntryPoint(string[] args) cil managed
+{
+   .entrypoint
+   .locals init([0] int32 Result)
+    ldc.i4 0x34
+    ldc.i4 0x32
+    add
+    stloc.0
+    ldloc.0
+    call void [mscorlib]System.Console::WriteLine(int32)
+    ret
   }
-
 }

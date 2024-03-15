@@ -1,4 +1,4 @@
-**Video Tutorial link** : [Writing pure MSIL/IL/CIL code: .NET internals, CLR, JIT compiler and more](https://youtu.be/ki66eCCgVXk)
+**Video Tutorial link** : [Writing in IL (MSIL/CIL) in .NET is EASY, FAST, & even FUN (2024)!](https://youtu.be/NGrdLy4nGB8)
 
 **General Information**
 
