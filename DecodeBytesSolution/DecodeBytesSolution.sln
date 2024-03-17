@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimitiveObsessionDotNet", "PrimitiveObsessionDotNet\PrimitiveObsessionDotNet.csproj", "{CBDB7B8C-E461-4E0B-B67A-3EBD0B45CF29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimitiveObsessionDotNet", "PrimitiveObsessionDotNet\PrimitiveObsessionDotNet.csproj", "{CBDB7B8C-E461-4E0B-B67A-3EBD0B45CF29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimitiveObss.API", "PrimitiveObss.API\PrimitiveObss.API.csproj", "{4C2C2876-312F-4653-B175-98CDA076FD17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimitiveObss.Services", "PrimitiveObss.Services\PrimitiveObss.Services.csproj", "{9BEF08F6-9655-467E-943E-80F450E1DB1A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{CBDB7B8C-E461-4E0B-B67A-3EBD0B45CF29}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBDB7B8C-E461-4E0B-B67A-3EBD0B45CF29}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBDB7B8C-E461-4E0B-B67A-3EBD0B45CF29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4C2C2876-312F-4653-B175-98CDA076FD17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C2C2876-312F-4653-B175-98CDA076FD17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C2C2876-312F-4653-B175-98CDA076FD17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C2C2876-312F-4653-B175-98CDA076FD17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BEF08F6-9655-467E-943E-80F450E1DB1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BEF08F6-9655-467E-943E-80F450E1DB1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BEF08F6-9655-467E-943E-80F450E1DB1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BEF08F6-9655-467E-943E-80F450E1DB1A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

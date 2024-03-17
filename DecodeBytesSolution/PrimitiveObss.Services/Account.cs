@@ -1,7 +1,6 @@
 ﻿using CSharpFunctionalExtensions;
-using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace PrimitiveObsessionDotNet
+namespace PrimitiveObss.Services
 {
     public record AccountNumber
     {
@@ -21,6 +20,14 @@ namespace PrimitiveObsessionDotNet
             }
 
             return Result.Success(new AccountNumber(number));
+        }
+        public static implicit operator string(AccountNumber number)
+        {
+            return number._value;
+        }
+        public static explicit operator AccountNumber(string number)
+        {
+            return new AccountNumber(number);
         }
     }
 
@@ -42,36 +49,16 @@ namespace PrimitiveObsessionDotNet
             }
             return Result.Success(new AccountName(name));
         }
-    }
-
-    class AccountService
-    {
-        public void ChangeNumber(AccountNumber accountNumber)
+        public static implicit operator string(AccountName name)
         {
-
+            return name._value;
         }
-
-        public void CreateNumber(AccountNumber accountNumber)
+        //
+        public static explicit operator AccountName(string name)
         {
-
-        }
-    }
-
-    public class AccountFactory
-    {
-        //create, throw
-        public static Account CreateAccount(AccountName Name, AccountNumber Number)
-        {
-            return new Account(Name, Number);
+            return new AccountName(name); 
         }
     }
 
     public record Account(AccountName Name, AccountNumber Number) { }
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello, World!");
-        }
-    }
 }
