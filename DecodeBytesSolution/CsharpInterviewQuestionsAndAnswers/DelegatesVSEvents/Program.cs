@@ -7,6 +7,11 @@
         {
             #region delegates
             Accounts accounts = new();
+
+
+            var rsp = accounts.GetByAccountName(x => x.StartsWith("Mr.Accou"));
+            rsp = accounts.GetByAccountName(x => x.Contains("2"));
+
             var accountEventHandlerResponse = accounts.GetAccountBy(new AccountEventHandler(x => x.Number == "1111111"));
             accounts.GetAccountBy(new AccountEventHandler(x => x.Name == "dsfdsfdsf"));
             var funcEventHandlerResponse = accounts.GetAccountBy(new Func<Account, bool>(x => x.Name.Contains("Mr.Accou")));
