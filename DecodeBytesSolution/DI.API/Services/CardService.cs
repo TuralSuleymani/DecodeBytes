@@ -4,13 +4,9 @@ using DI.API.Repositories;
 
 namespace DI.API.Services
 {
-    public class CardService : ICardService
+    public class CardService(ICardRepository cardRepository) : ICardService
     {
-        private ICardRepository _cardRepository;
-        public CardService(ICardRepository cardRepository)
-        {
-            _cardRepository = cardRepository;
-        }
+        private readonly ICardRepository _cardRepository = cardRepository;
 
         public async Task<Result<Card, string>> GetCardByIdAsync(Guid cardId)
         {

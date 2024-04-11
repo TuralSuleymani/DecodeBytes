@@ -3,15 +3,11 @@ using CSharpFunctionalExtensions;
 using DI.API.Models;
 namespace DI.API.Services
 {
-    public class AccountService : IAccountService
+    public class AccountService(IAccountRepository accountRepository, ICardService cardService) : IAccountService
     {
-        private IAccountRepository _accountRepository;
-        private ICardService _cardService;
-        public AccountService(IAccountRepository accountRepository, ICardService cardService)
-        {
-            _accountRepository = accountRepository;
-            _cardService = cardService;
-        }
+        private readonly IAccountRepository _accountRepository = accountRepository;
+        private readonly ICardService _cardService = cardService;
+
         public async Task<Result<Account, string>> Bind(Guid accountId, Guid cardId)
         {
             var account = await _accountRepository.GetAccountByIdAsync(accountId);

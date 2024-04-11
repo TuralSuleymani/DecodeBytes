@@ -9,7 +9,7 @@ namespace DI.API.Controllers
     [Route("[controller]")]
     public class AccountController : ControllerBase
     {
-        private IAccountService _accountService;
+        private readonly IAccountService _accountService;
         public AccountController(IAccountService accountService)
         {
             _accountService = accountService;
