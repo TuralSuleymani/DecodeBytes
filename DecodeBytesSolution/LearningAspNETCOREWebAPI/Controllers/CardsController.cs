@@ -1,5 +1,6 @@
 ﻿using LearningAspNETCOREWebAPI.Data;
 using LearningAspNETCOREWebAPI.Models;
+using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LearningAspNETCOREWebAPI.Controllers
@@ -20,7 +21,7 @@ namespace LearningAspNETCOREWebAPI.Controllers
         }
 
 
-        [HttpGet("{cardId}", Name ="GetCard")]
+        [HttpGet("{cardId}", Name = "GetCard")]
         public ActionResult<Card> GetCard(int accountId, int cardId)
         {
             var account = AccountDbContext.Current.Accounts.FirstOrDefault(x => x.Id == accountId);
@@ -36,7 +37,7 @@ namespace LearningAspNETCOREWebAPI.Controllers
             return Ok(card);
         }
 
-        [HttpPost]//create any resource
+        [HttpPost]
         public ActionResult<Card> CreateCard(int accountId, CreateCard createCard)
         {
             //1: check if account exist
@@ -57,7 +58,7 @@ namespace LearningAspNETCOREWebAPI.Controllers
                 return BadRequest();
             }
 
-            int id = account.Cards.OrderByDescending(x=>x.Id).First().Id;
+            int id = account.Cards.OrderByDescending(x => x.Id).First().Id;
 
             Card _card = new Card()
             {
@@ -91,5 +92,66 @@ namespace LearningAspNETCOREWebAPI.Controllers
             return NoContent();//204
         }
 
+        [HttpPatch("{cardId}")]
+        public ActionResult<Card> PatchCard(int accountId, int cardId, JsonPatchDocument<UpdateCard> updateCard)
+        {
+            var account = AccountDbContext.Current.Accounts.FirstOrDefault(x => x.Id == accountId);
+            if (account is null)
+            {
+                return BadRequest();
+            }
+
+            var card = account.Cards.FirstOrDefault(x => x.Id == cardId);
+            if (card is null)
+            {
+                return BadRequest();
+            }
+
+            UpdateCard _updateCard = new UpdateCard()
+            {
+                ExpireDate = card.ExpireDate,
+                HolderName = card.HolderName,
+                Number = card.Number,
+            };
+
+            updateCard.ApplyTo(_updateCard, ModelState);
+            
+            if(!TryValidateModel(_updateCard))
+            {
+                return BadRequest(ModelState);
+            }
+
+
+            if(!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            card.Number = _updateCard.Number;
+            card.HolderName = _updateCard.HolderName;
+            card.ExpireDate = _updateCard.ExpireDate;
+
+            return NoContent();
+
+        }
+
+        [HttpDelete("{cardId}")]
+        public ActionResult<Card> DeleteCard(int accountId, int cardId)
+        {
+            var account = AccountDbContext.Current.Accounts.FirstOrDefault(x => x.Id == accountId);
+            if (account is null)
+            {
+                return BadRequest();
+            }
+
+            var card = account.Cards.FirstOrDefault(x => x.Id == cardId);
+            if (card is null)
+            {
+                return BadRequest();
+            }
+
+            account.Cards.Remove(card);
+            return NoContent();
+        }
     }
 }
