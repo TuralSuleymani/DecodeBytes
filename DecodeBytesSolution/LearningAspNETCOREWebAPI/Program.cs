@@ -1,4 +1,6 @@
+using LearningAspNETCOREWebAPI.Db;
 using LearningAspNETCOREWebAPI.Services;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,6 +17,8 @@ builder.Services.AddControllers(x => x.ReturnHttpNotAcceptable = true)
 
 builder.Services.AddTransient<NotificationService>();
 builder.Services.AddTransient<TransactionService>();
+
+builder.Services.AddDbContext<MyDbContext>(x => x.UseSqlite("Data Source=MySqliteDb.db"));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
