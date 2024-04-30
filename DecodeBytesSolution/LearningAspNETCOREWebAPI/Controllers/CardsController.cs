@@ -1,5 +1,6 @@
 ﻿using LearningAspNETCOREWebAPI.Data;
 using LearningAspNETCOREWebAPI.Models;
+using LearningAspNETCOREWebAPI.Services;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,6 +10,15 @@ namespace LearningAspNETCOREWebAPI.Controllers
     [ApiController]
     public class CardsController : ControllerBase
     {
+        private readonly ILogger<CardsController> _logger;
+        private readonly INotificationService _notificationService;
+
+        //3 cons, method,prop
+        public CardsController(ILogger<CardsController> logger,NotificationService notificationService)
+        {
+            _logger = logger;
+            _notificationService = notificationService;
+        }
         [HttpGet]
         public ActionResult<ICollection<Card>> GetCards(int accountId)
         {
@@ -24,6 +34,7 @@ namespace LearningAspNETCOREWebAPI.Controllers
         [HttpGet("{cardId}", Name = "GetCard")]
         public ActionResult<Card> GetCard(int accountId, int cardId)
         {
+            _logger.LogInformation("Retrieving data from {@actionName} with {@accountId} and {@cardId}",nameof(GetCard),accountId,cardId);
             var account = AccountDbContext.Current.Accounts.FirstOrDefault(x => x.Id == accountId);
             if (account is null)
             {

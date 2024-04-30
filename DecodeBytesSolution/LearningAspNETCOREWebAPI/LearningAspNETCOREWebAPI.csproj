@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="8.0.4" />
+    <PackageReference Include="serilog.aspnetcore" Version="8.0.1" />
   </ItemGroup>
 
 </Project>
