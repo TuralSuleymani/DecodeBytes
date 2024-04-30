@@ -14,6 +14,7 @@ builder.Services.AddControllers(x => x.ReturnHttpNotAcceptable = true)
     .AddXmlDataContractSerializerFormatters();
 
 builder.Services.AddTransient<NotificationService>();
+builder.Services.AddTransient<TransactionService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -1,5 +1,6 @@
 ﻿using LearningAspNETCOREWebAPI.Data;
 using LearningAspNETCOREWebAPI.Models;
+using LearningAspNETCOREWebAPI.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LearningAspNETCOREWebAPI.Controllers
@@ -9,6 +10,12 @@ namespace LearningAspNETCOREWebAPI.Controllers
     [Route("api/[controller]")]
     public class AccountsController : ControllerBase
     {
+        private readonly TransactionService _transactionService;
+        public AccountsController(TransactionService transactionService)
+        {
+            _transactionService = transactionService;
+        }
+
         [HttpGet]
         public IEnumerable<Account> GetAccounts()
         {
