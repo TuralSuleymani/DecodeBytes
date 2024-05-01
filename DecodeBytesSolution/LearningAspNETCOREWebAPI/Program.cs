@@ -18,7 +18,7 @@ builder.Services.AddControllers(x => x.ReturnHttpNotAcceptable = true)
 builder.Services.AddTransient<NotificationService>();
 builder.Services.AddTransient<TransactionService>();
 
-builder.Services.AddDbContext<MyDbContext>(x => x.UseSqlite("Data Source=MySqliteDb.db"));
+builder.Services.AddDbContext<MyDbContext>(x => x.UseSqlite(builder.Configuration["Sqlite:Source"]));
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

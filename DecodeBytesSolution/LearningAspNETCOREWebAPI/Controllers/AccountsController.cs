@@ -1,6 +1,9 @@
 ﻿
+using LearningAspNETCOREWebAPI.Db;
+using LearningAspNETCOREWebAPI.Entities;
 using LearningAspNETCOREWebAPI.Services;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace LearningAspNETCOREWebAPI.Controllers
 {
@@ -9,27 +12,27 @@ namespace LearningAspNETCOREWebAPI.Controllers
     [Route("api/[controller]")]
     public class AccountsController : ControllerBase
     {
-        private readonly TransactionService _transactionService;
-        public AccountsController(TransactionService transactionService)
+        private readonly MyDbContext _dbContext;
+        public AccountsController(MyDbContext dbContext)
         {
-            _transactionService = transactionService;
+            _dbContext = dbContext;
         }
 
-        //[HttpGet]
-        //public IEnumerable<Account> GetAccounts()
-        //{
-        //    return AccountDbContext.Current.Accounts;
-        //}
+        [HttpGet]
+        public async Task<IEnumerable<Account>> GetAccounts()
+        {
+            return await _dbContext.Accounts.ToListAsync();
+        }
 
-        //[HttpGet("{id}")]
-        //public ActionResult<Account> GetAccount(int id)
-        //{
-        //   var account =  AccountDbContext.Current.Accounts.FirstOrDefault(x => x.Id == id);
-        //    if(account is null)
-        //    {
-        //        return BadRequest();
-        //    }
-        //    return Ok(account);
-        //}
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Account>> GetAccount(int id)
+        {
+            var account = await _dbContext.Accounts.FirstOrDefaultAsync(x => x.Id == id);
+            if (account is null)
+            {
+                return BadRequest();
+            }
+            return Ok(account);
+        }
     }
 }

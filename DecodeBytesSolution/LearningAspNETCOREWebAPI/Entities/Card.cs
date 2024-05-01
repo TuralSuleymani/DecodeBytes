@@ -17,6 +17,9 @@ namespace LearningAspNETCOREWebAPI.Entities
         [StringLength(maximumLength:5,MinimumLength =5)]
         public string ExpireDate { get; set; } 
 
+        public Account? Account { get; set; }
+        public int AccountId { get; set; }
+
         [Required]
         [StringLength(maximumLength:19,MinimumLength =19)]
         public string Number { get; set; }//4444-5555-3333-6767
