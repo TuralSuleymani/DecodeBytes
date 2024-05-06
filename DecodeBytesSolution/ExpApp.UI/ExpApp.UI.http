@@ -1,0 +1,6 @@
+@ExpApp.UI_HostAddress = http://localhost:5191
+
+GET {{ExpApp.UI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
