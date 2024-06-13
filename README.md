@@ -1,6 +1,9 @@
-This repository holds the code for the practical videos on the [#DecodeBytes](https://www.youtube.com/@DecodeByte/videos) channel.
+**Video link:**[Asp.NET CORE middleware exlpained](https://youtu.be/OIdEDnNa_x4?si=Nb6GrqvsBt3nVJRH)
 
-**Channel link:** [DecodeBytes](https://www.youtube.com/@DecodeByte/videos)
+**General Information**
+This repository holds the code for the practical videos on the [#TuralSuleymaniTech](https://www.youtube.com/@TuralSuleymaniTech/videos) channel.
+
+**Channel link:** [TuralSuleymaniTech](https://www.youtube.com/@TuralSuleymaniTech/videos)
 
 
 **Branching Strategy:** Each practical video has a dedicated branch where we develop and test the code for that specific video.
