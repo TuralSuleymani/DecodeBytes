@@ -1,6 +1,9 @@
-This repository holds the code for the practical videos on the [#DecodeBytes](https://www.youtube.com/@DecodeByte/videos) channel.
+**Video link:** [C# interview questions :Delegates and Evenets](https://youtu.be/U9QbwPDxlcw?si=AUjBvspF_4kjDMU7)
 
-**Channel link:** [DecodeBytes](https://www.youtube.com/@DecodeByte/videos)
+**General information**
+This repository holds the code for the practical videos on the [#TuralSuleymaniTech](https://www.youtube.com/@TuralSuleymaniTech/videos) channel.
+
+**Channel link:** [TuralSuleymaniTech](https://www.youtube.com/@TuralSuleymaniTech/videos)
 
 
 **Branching Strategy:** Each practical video has a dedicated branch where we develop and test the code for that specific video.
