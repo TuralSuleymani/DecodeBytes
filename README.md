@@ -1,6 +1,10 @@
-This repository holds the code for the practical videos on the [#DecodeBytes](https://www.youtube.com/@DecodeByte/videos) channel.
+**Video Tutorial link** : [Master Expression Trees in C# like a Senior](https://youtu.be/lkZxn76w88U)
 
-**Channel link:** [DecodeBytes](https://www.youtube.com/@DecodeByte/videos)
+**General Information**
+
+This repository holds the code for the practical videos on the [#TuralSuleymaniTech](https://www.youtube.com/@TuralSuleymaniTech/videos) channel.
+
+**Channel link:** [TuralSuleymaniTech](https://www.youtube.com/@TuralSuleymaniTech/videos)
 
 
 **Branching Strategy:** Each practical video has a dedicated branch where we develop and test the code for that specific video.
