@@ -1,0 +1,6 @@
+@ExpressionTreesInPractice_HostAddress = http://localhost:5293
+
+GET {{ExpressionTreesInPractice_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
