@@ -3,7 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherMicroservice", "WeatherMicroservice\WeatherMicroservice.csproj", "{746A035D-B402-48BA-A607-2762E66EFA0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AccountMicroservice", "AccountMicroservice\AccountMicroservice.csproj", "{85F6E203-2DE8-4CC7-9CD2-3DF623190387}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyApiGateway", "MyApiGateway\MyApiGateway.csproj", "{A08B62FF-7F85-4DFD-9791-350371155A7D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AccountMicroservice2", "AccountMicroservice2\AccountMicroservice2.csproj", "{4D107D7C-D7BC-4C92-BA64-CF5C6D8A04E2}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{746A035D-B402-48BA-A607-2762E66EFA0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{746A035D-B402-48BA-A607-2762E66EFA0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{746A035D-B402-48BA-A607-2762E66EFA0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{746A035D-B402-48BA-A607-2762E66EFA0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85F6E203-2DE8-4CC7-9CD2-3DF623190387}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85F6E203-2DE8-4CC7-9CD2-3DF623190387}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85F6E203-2DE8-4CC7-9CD2-3DF623190387}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85F6E203-2DE8-4CC7-9CD2-3DF623190387}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A08B62FF-7F85-4DFD-9791-350371155A7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A08B62FF-7F85-4DFD-9791-350371155A7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A08B62FF-7F85-4DFD-9791-350371155A7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A08B62FF-7F85-4DFD-9791-350371155A7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D107D7C-D7BC-4C92-BA64-CF5C6D8A04E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D107D7C-D7BC-4C92-BA64-CF5C6D8A04E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D107D7C-D7BC-4C92-BA64-CF5C6D8A04E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D107D7C-D7BC-4C92-BA64-CF5C6D8A04E2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

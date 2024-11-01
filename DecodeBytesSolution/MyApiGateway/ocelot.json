@@ -1,0 +1,42 @@
+﻿{
+  "Routes": [
+    {
+      "UpstreamPathTemplate": "/gateway/account",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamPathTemplate": "/account",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7156
+        },
+        {
+          "Host": "localhost",
+          "Port": 7158
+        }
+      ],
+      "LoadBalancerOptions": {
+        "Type": "RoundRobin"
+      },
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "60s",
+        "PeriodTimespan": 15,
+        "Limit": 4
+      }
+    },
+    {
+      "UpstreamPathTemplate": "/gateway/weather",
+      "UpstreamHttpMethod": [ "GET" ],
+      "DownstreamScheme": "https",
+      "DownstreamPathTemplate": "/weatherforecast",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 7092
+        }
+      ]
+    }
+  ]
+}
